@@ -1,0 +1,53 @@
+/* body{
+    background-color: red;
+} */
+
+/* navigation */
+#navbar{
+    flex-direction: column;
+}
+#navbar img{
+    height: 80px;
+}
+#navbar ul li{
+    margin-top: 0;
+    padding-top: 0;
+}
+#navbar ul li a{
+    font-size: 0.5rem;
+    padding-bottom: 20px;
+}
+
+/* intro */
+#intro{
+    overflow: hidden;
+    padding: 50px 40px;
+}
+#intro h1{
+    font-size: 1.4rem;
+}
+#intro p{
+    font-size: 0.7rem;
+}
+#first-para{
+    padding-top: 10px;
+}
+#btn{
+    font-size: 10px;
+    padding: 4 10px;
+}
+.services #boxes{
+    flex-direction: column;
+}
+
+/* clients */
+#clients{
+    overflow: hidden;
+}
+#client{
+    flex-wrap: wrap;
+}
+#client img{
+    width: 50px;
+    height: auto;
+}

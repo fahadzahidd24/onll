@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation bar  */
+#navbar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* position: relative; */
+    position: sticky;
+    top:0;
+}
+#logo img{
+    height: 110px;
+}
+#navtabs{
+    display: flex;
+    
+}
+#navtabs li{
+    list-style: none;
+    margin: 10px;
+    padding: 5px;
+    
+}
+#navtabs li a{
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: 'Libre Baskerville', serif; 
+    font-size: 15px;   
+}
+#navtabs li a:hover{
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+}
+#navbar::before{
+    content: "";
+    background-color:black;
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+/* intro section  */
+
+#intro::before{
+    content: " ";
+    position: absolute; 
+    background: url(bg1.jpg) no-repeat center center/cover;
+    
+    top: 0px;
+    left: 0px;
+    height: 444px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+     
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding:50px 200px;
+    height: 246px;
+}
+.primary-heading1{
+    font-size: 2.3rem;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+}
+#intro p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    
+}
+#first-para{
+    padding-top: 20px;
+}
+#btn{
+    margin: 20px;
+    padding: 8px;
+    border: 1px solid brown;
+    color: white;
+    background-color: rgb(179, 132, 3);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* services */
+.primary-heading2{
+    font-size: 2.3rem;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+}
+#services{
+    display: flex;
+    margin:34px;
+    flex-wrap: wrap;
+}
+#boxes{
+    display: flex;
+}
+.box{
+    border: 1px solid rgb(167, 61, 0);
+    border-radius: 20px;
+    margin: 20px;
+    box-shadow: 5px 5px 5px 2px rgba(231, 174, 67, 0.76);
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+.box img{
+    display: block;
+    height: 120px;
+    padding-top: 10%;
+    margin: auto;
+} 
+.in-para{
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Playfair Display SC', serif;
+}
+.primary-heading3{
+    font-size: 1.9rem;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Playfair Display SC', serif;
+    text-decoration: underline 2px;
+    cursor: pointer;
+}
+
+/* clients */
+#clients{
+    position: relative;
+}
+#clients::before{
+    content: "";
+    position: absolute;
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+.clt img{
+    height: 100px;
+    margin: 50px;
+}
+#client{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+/* footer */
+
+footer p{
+    text-align: center;
+    background-color: brown;
+    color: white;
+    font-size: small;
+    padding: 5px;
+}
